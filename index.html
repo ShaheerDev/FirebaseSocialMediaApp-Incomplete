@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social App</title>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+    <script src="app.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBjYbrjIopSaAepte7s5rkooltNgu_d78w",
+    authDomain: "socialwebappproject.firebaseapp.com",
+    databaseURL: "https://socialwebappproject.firebaseio.com",
+    projectId: "socialwebappproject",
+    storageBucket: "socialwebappproject.appspot.com",
+    messagingSenderId: "859684696013",
+    appId: "1:859684696013:web:5f0f3de3a0dc7026aade84",
+    measurementId: "G-SSR305Y536"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<style>
+
+        .heading{
+        font-family: sans-serif;
+        background-color: aquamarine;
+        }
+        .postbtn {
+        font-family: sans-serif;
+        text-align: center;
+        background-color: blue;
+        color: white;
+        width: 342px;
+        height: 50px;
+        }
+
+        .postbox{
+        font-family: sans-serif;
+        background-color: aquamarine;
+        text-align: center;
+        resize: none;
+        }
+
+        .userposts{
+        font-family: sans-serif;
+        background-color: aquamarine;
+        text-align: center;
+        resize: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Social App Project</h1>
+    </div>
+    <div class="postbox">
+    <textarea cols="40" rows="2" id="postname" placeholder="Your name..."></textarea>
+    </div>
+    <div class="postbox">
+    <textarea cols="40" rows="4" id="postbox" placeholder="Your post..."></textarea>
+    </div>
+    <div class="postbox">
+    <button onclick="press()" class="postbtn">POST!</button>
+    </div>
+    <div class="userposts" id="userposts">
+        <table style="width:100%">
+            <tr id="tr">
+              <th>Name:</th>
+              <th>Post message:</th> 
+            </tr>
+            <tr> 
+            </tr>
+            <tr>
+              <tr>
+            </tr>
+          </table>
+    </div>
+</body>
+</html>
